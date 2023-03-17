@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+header button {
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  cursor: pointer;
+  color: aliceblue;
+  padding: 12px;
+}
+
+header input {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px;
+}
+main {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+
+.mainDivStyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 50px;
+  text-align: center;
+  border: 4px solid red;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.username {
+  color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 20px;
+}
+
+.userImage {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.userCard {
+  padding: 20px;
+  border: 3px solid aliceblue;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.reload {
+  width: 70px;
+  margin-right: 50px;
+  background-color: black;
+}
+.repo-div {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.repo-card {
+  padding: 20px;
+  width: 30%;
+}
+.repoName {
+  color: white;
+  padding: 20px;
+}
+.repoImg {
+  width: 100px;
+  border-radius: 50%;
+}
+.repoDescription {
+  color: aliceblue;
+  padding: 20px;
+  border: 1px solid springgreen;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: steelblue;
+}
+.repoStars {
+  color: red;
+  padding: 20px;
+  border: 2px solid springgreen;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: black;
+}
+
+.goto {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: aqua;
+  border: none;
+  cursor: pointer;
+}
