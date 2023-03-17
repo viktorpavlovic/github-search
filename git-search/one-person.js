@@ -3,13 +3,10 @@ const person = JSON.parse(sessionStorage.getItem("clickedPerson"));
 const mainRepo = document.querySelector(".repo-div");
 const goBack = document.querySelector(".goto");
 
-console.log(person.repos_url);
-
 // const
 
 function printCards(obj) {
   obj.forEach((element) => {
-    console.log(element.name);
     const repoCard = document.createElement("div");
     repoCard.classList.add("repo-card");
     mainRepo.append(repoCard);
@@ -22,7 +19,7 @@ function printCards(obj) {
     repoImg.classList.add("repoImg");
     repoCard.append(repoImg);
     const repoDescription = document.createElement("p");
-    console.log(element.description);
+
     if (element.description !== null) {
       repoDescription.textContent = element.description;
       repoDescription.classList.add("repoDescription");
@@ -33,7 +30,7 @@ function printCards(obj) {
 
       repoCard.append(repoDescription);
     }
-    // console.log(stargazers_count);
+
     const stars = document.createElement("p");
     if (element.stargazers_count !== 0) {
       stars.innerHTML = `${element.stargazers_count}  &#11088;`;
